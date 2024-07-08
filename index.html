@@ -436,7 +436,8 @@
             errorSelector: '.form-message',
             rules: [
                 Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
-                Validator.isRequired('#email'),
+                Validator.isRequired('#phone-number',  'Vui lòng nhập email của bạn'),
+                Validator.isRequired('#address',  'Vui lòng nhập số điện thoại của bạn'),
                 Validator.isEmail('#email'),
                 Validator.minLength('#phone-number', 10),
                 Validator.isRequired('#address'),
